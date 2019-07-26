@@ -1,0 +1,45 @@
+// * * * * * * * * * COLORS * * * * * * * * * * * * //
+
+$bgBlack: #1d1f20;
+$bookCoverBrown: #61300d;
+
+
+
+// * * * * * * * * * GENERAL * * * * * * * * * * * * //
+
+@mixin minWidth($screen) {
+  @media (min-width: $screen + 'px') {
+    @content;
+  }
+}
+@mixin maxWidth($screen) {
+  @media (max-width: $screen + 'px') {
+    @content;
+  }
+}
+@mixin lgDown {
+  @media (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin mdDown {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+@mixin smDown {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin xsDown {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin centerItem {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
